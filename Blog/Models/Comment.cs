@@ -19,5 +19,9 @@ namespace Blog.Models
         public string Content { get; set; }
 
         public CommentStatus Status { get; set; }
+
+        public virtual BlogUser Author { get; set; }
+        public virtual Post Post { get; set; }
+        
     }
 }
